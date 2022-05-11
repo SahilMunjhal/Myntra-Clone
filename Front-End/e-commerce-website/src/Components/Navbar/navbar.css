@@ -1,0 +1,45 @@
+.navbar-image{
+    height: 10%;
+    width: 10%;
+    margin: 1% 1%;
+}
+
+.navbar-header{
+    display: flex;
+    background-color:#ffffff;
+}
+
+.navbar-search{
+    margin: 0px 40px;
+    margin-left: 20px;
+}
+
+.navbar-search>input{
+   margin: 18% 10%;
+   height: 30%;
+   width: 160%;
+   padding: 2%;
+}
+
+.navbar-right{
+    margin-top: 25px;
+    margin-left: 13%;
+    display: flex;
+    gap: 18px;
+}
+
+.navbar-wishlist{
+   margin-top: -2px;
+}
+
+.navbar-bag{
+    margin-top: -5px;
+}
+
+.navbar-bag>h3{
+    margin-top: -7px;
+}
+
+#basicButton{
+    margin-top:  -5px;
+}

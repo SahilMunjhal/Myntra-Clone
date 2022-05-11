@@ -1,0 +1,75 @@
+.navbarmenu>ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 8% 0%;
+}
+
+.navbar-menu-mens,.navbar-menu-women,.navbar-menu-kids,.navbar-menu-living,
+.navbar-menu-beauty,.navbar-menu-studio{
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.navbarmenu>ul>li:hover .navbar-menu-mens{
+    position:absolute;
+    cursor: pointer;
+    margin-top: 0px;
+    border-bottom:20px;
+    display: block;
+    display: flex;
+    gap: 40px;
+ }
+
+.navbarmenu>ul>li:hover .navbar-menu-women{
+   margin-left: -60px;
+   position:absolute;
+   cursor: pointer;
+   margin-top: 0px;
+   border-bottom:20px;
+   display: block;
+   display: flex;
+   gap: 40px;
+}
+
+.navbarmenu>ul>li:hover .navbar-menu-kids{
+    margin-left: -120px;
+    position:absolute;
+    cursor: pointer;
+    margin-top: 0px;
+    border-bottom:20px;
+    display: block;
+    display: flex;
+    gap: 40px;
+ }
+
+ .navbarmenu>ul>li:hover .navbar-menu-living{
+    margin-left: -180px;
+    position:absolute;
+    cursor: pointer;
+    margin-top: 0px;
+    border-bottom:20px;
+    display: block;
+    display: flex;
+    gap: 40px;
+ }
+
+ .navbarmenu>ul>li:hover .navbar-menu-beauty{
+    margin-left: -60px;
+    position:absolute;
+    cursor: pointer;
+    margin-top: 0px;
+    border-bottom:20px;
+    display: block;
+    display: flex;
+    gap: 40px;
+ }
+
+.navbar-menu-mens>div:nth-child(even){
+    background-color:#e3dadb1c;
+}
+
+h3{
+    color:#ff3f6c;
+}

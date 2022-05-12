@@ -1,0 +1,54 @@
+.footer-main{
+    padding: 30px;
+    background-color: #fafbfc;
+    display: flex;
+    gap: 40px;
+    margin: 0px 10%;
+}
+
+li{
+    list-style: none;
+}
+
+.footer-playstore{
+    display: flex;
+}
+
+.footer-playstore-image{
+    height: 50px;
+    width: 160px;
+}
+
+.footer-icons{
+    display: flex;
+    gap: 15px;
+}
+
+.footer-icons>img{
+    height: 25px;
+    width: 25px;
+}
+
+.footer-original{
+    display: flex;
+    width: 330px;
+}
+
+.footer-original-span{
+    font-size: 15px;
+    color: gray;
+}
+
+.footer-thirty{
+    display: flex;
+    width: 330px;
+}
+
+.footer-thirty>img{
+   margin: 0px 20px;
+}
+
+.footer-original-span{
+    font-size: 15px;
+    color: gray;
+}

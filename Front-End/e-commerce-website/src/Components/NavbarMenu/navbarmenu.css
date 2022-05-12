@@ -1,8 +1,15 @@
-.navbarmenu>ul{
+.navbarmenu>div{
+    height: 100%;
     list-style: none;
     display: flex;
     gap: 30px;
-    margin: 8% 0%;
+    margin:8%;
+    margin-left: 0px;
+    cursor: pointer;
+}
+
+.navbar>div>div{
+    cursor: pointer;
 }
 
 .navbar-menu-mens,.navbar-menu-women,.navbar-menu-kids,.navbar-menu-living,
@@ -12,58 +19,96 @@
     height: 100%;
 }
 
-.navbarmenu>ul>li:hover .navbar-menu-mens{
+.navbarmenu>div>div:hover .navbar-menu-mens{
+    cursor:grab;
+    padding: 25px;
+    left: 120px;
+    right: 120px;
+    height: 360px;
+    background-color: white;
+    top: 100px;
     position:absolute;
     cursor: pointer;
     margin-top: 0px;
-    border-bottom:20px;
+    border-bottom:4px solid pink;
     display: block;
     display: flex;
     gap: 40px;
  }
 
-.navbarmenu>ul>li:hover .navbar-menu-women{
-   margin-left: -60px;
-   position:absolute;
-   cursor: pointer;
-   margin-top: 0px;
-   border-bottom:20px;
-   display: block;
-   display: flex;
-   gap: 40px;
+.navbarmenu>div>div:hover .navbar-menu-women{
+    padding: 25px;
+    left: 120px;
+    right: 120px;
+    height: 360px;
+    background-color: white;
+    top: 100px;
+    position:absolute;
+    cursor: pointer;
+    margin-top: 0px;
+    border-bottom:4px solid pink;
+    display: block;
+    display: flex;
+    gap: 40px;
 }
 
-.navbarmenu>ul>li:hover .navbar-menu-kids{
-    margin-left: -120px;
+.navbarmenu>div>div:hover .navbar-menu-kids{
+    padding: 25px;
+    left: 120px;
+    right: 120px;
+    height: 360px;
+    background-color: white;
+    top: 100px;
     position:absolute;
     cursor: pointer;
     margin-top: 0px;
-    border-bottom:20px;
+    border-bottom:4px solid pink;
     display: block;
     display: flex;
     gap: 40px;
  }
 
- .navbarmenu>ul>li:hover .navbar-menu-living{
-    margin-left: -180px;
+ .navbarmenu>div>div:hover .navbar-menu-living{
+    padding: 25px;
+    left: 120px;
+    right: 120px;
+    height: 360px;
+    background-color: white;
+    top: 100px;
     position:absolute;
     cursor: pointer;
     margin-top: 0px;
-    border-bottom:20px;
+    border-bottom:4px solid pink;
     display: block;
     display: flex;
     gap: 40px;
  }
 
- .navbarmenu>ul>li:hover .navbar-menu-beauty{
-    margin-left: -60px;
+ .navbarmenu>div>div:hover .navbar-menu-beauty{
+    padding: 25px;
+    left: 120px;
+    height: 360px;
+    background-color: white;
+    top: 100px;
     position:absolute;
     cursor: pointer;
     margin-top: 0px;
-    border-bottom:20px;
+    border-bottom:4px solid pink;
     display: block;
     display: flex;
     gap: 40px;
+ }
+
+
+ .navbarmenu>div>div:hover .navbar-menu-studio{
+    padding: 25px;
+    left: 120px;
+    height: 360px;
+    background-color: white;
+    top: 80px;
+    position:absolute;
+    margin-top: 0px;
+    display: block;
  }
 
 .navbar-menu-mens>div:nth-child(even){

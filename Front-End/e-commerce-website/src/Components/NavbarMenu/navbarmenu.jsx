@@ -3,8 +3,8 @@ import "./navbarmenu.css";
 export const NavbarMenu = () => {
   return (
     <div className="navbarmenu">
-      <ul>
-        <li>
+      <div>
+        <div className="navbar-menu-mens-l1">
           Mens
           <div className="navbar-menu-mens">
             <div className="navbar-menu-mens-two">
@@ -97,8 +97,8 @@ export const NavbarMenu = () => {
               </div>
             </div>
           </div>
-        </li>
-        <li>Womens
+        </div>
+        <div>Womens
         <div className="navbar-menu-women">
             <div className="navbar-menu-mens-two">
             <div>
@@ -190,8 +190,8 @@ export const NavbarMenu = () => {
               </div>
             </div>
           </div>
-        </li>
-        <li>Kids
+        </div>
+        <div>Kids
         <div className="navbar-menu-kids">
             <div className="navbar-menu-mens-two">
             <div>
@@ -283,8 +283,8 @@ export const NavbarMenu = () => {
               </div>
             </div>
           </div>
-        </li>
-        <li>Kids
+        </div>
+        <div>Home
         <div className="navbar-menu-kids">
             <div className="navbar-menu-mens-two">
             <div>
@@ -376,8 +376,8 @@ export const NavbarMenu = () => {
               </div>
             </div>
           </div>
-        </li>
-        <li>Human & Living
+        </div>
+        <div>Beauty 
         <div className="navbar-menu-living">
             <div className="navbar-menu-mens-two">
             <div>
@@ -469,14 +469,14 @@ export const NavbarMenu = () => {
               </div>
             </div>
           </div>
-        </li>
-        <li>Studio
+        </div>
+        <div>Studio
            <div className="navbar-menu-studio">
-           <img height="40%" width="40%"
+           <img height="300px" width="60%"
            src="https://constant.myntassets.com/web/assets/img/sudio-nav-banner.png"/>
            </div>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
   );
 };

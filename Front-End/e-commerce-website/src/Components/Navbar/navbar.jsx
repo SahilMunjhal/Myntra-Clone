@@ -40,7 +40,7 @@ export const Navbar = () => {
 
       <NavbarMenu />
       <div className="navbar-search">
-        <input type="text" placeholder="search" />
+        <input type="text" placeholder="Search for Products,Brands or More" />
       </div>
       <div className="navbar-right">
         <div>

@@ -6,6 +6,7 @@ export const Footer=()=>{
 
 
     return(
+    <div>
         <div className="footer-main">
            <div className="footer-online">
              <h4>ONLINE-SHOPPING</h4>
@@ -67,5 +68,7 @@ export const Footer=()=>{
                </div>
            </div>
         </div>
+        <hr />
+    </div>
     )
 }

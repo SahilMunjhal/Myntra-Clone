@@ -1,6 +1,7 @@
 
 
 
+import { Link } from "react-router-dom";
 import "./Home.css"
 
 export const Home=()=>{
@@ -10,8 +11,10 @@ export const Home=()=>{
 
     return(
         <div id="home-container">
+            <Link to={"/products"}>
             <img  className="home-image"
-             src="https://assets.ajio.com/medias/sys_master/images/images/hf9/hbe/15486043062302/12022020-D-SteveMadden-SecondBanner-shopmen.jpg"/>
+             src="https://assets.ajio.com/cms/AJIO/WEB/12052022-D-unisex-topbannercarousel-p5-brands-4070.jpg"/>
+            </Link>
              
             <div className="home-discount-container">
                <img src="https://assets.myntassets.com/f_webp,w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2022/5/2/5d1b7ad3-c3ed-4ef9-a654-18231743d3cd1651484798059-Anouk-Inddus.jpg"/>

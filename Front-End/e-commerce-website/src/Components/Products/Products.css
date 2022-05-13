@@ -1,0 +1,35 @@
+#products-main{
+    display: flex;
+}
+
+.products-main-sidebar{
+    border: 5px solid black;
+    height: 930px;
+    width: 260px;
+    position: sticky;
+}
+
+.products-main-sidebar-filterByType{
+    height:180px;
+    width: 83%;
+    border: 1px solid grey;
+    padding: 25px;
+}
+
+.products-main-sidebar>h3{
+    padding-left: 20px;
+}
+
+.products-main-sidebar>div{
+    padding-left: 20px;
+}
+
+.products-main-filter-left{
+    display: flex;
+    margin-right: 56%;
+}
+
+.products-main-filter{
+    margin-top:  12px;
+   display: flex;
+}

@@ -12,7 +12,6 @@
 .products-main-sidebar-filterByType{
     height:180px;
     width: 83%;
-    border: 1px solid grey;
     padding: 25px;
 }
 
@@ -26,10 +25,40 @@
 
 .products-main-filter-left{
     display: flex;
-    margin-right: 56%;
+    margin-right: 500px;
 }
 
 .products-main-filter{
     margin-top:  12px;
-   display: flex;
+    display: flex;
+}
+
+.products-main-data-page{
+    width: 80%;
+}
+
+.products-main-data{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.product-price{
+    display: flex;
+    gap: 10px;
+    margin-top: -20px;
+}
+
+.product-price>p{
+   margin-top: 21px;
+   text-decoration-line: line-through;
+}
+
+.product-price span{
+    margin-top: 21px;
+    color: red;
+}
+
+.product-element-card-info{
+    padding: 10px;
+    line-height: 10px;
 }

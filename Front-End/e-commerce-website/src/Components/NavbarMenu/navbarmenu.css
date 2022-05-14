@@ -34,6 +34,7 @@
     display: block;
     display: flex;
     gap: 40px;
+    z-index: 4;
  }
 
 .navbarmenu>div>div:hover .navbar-menu-women{
@@ -50,6 +51,7 @@
     display: block;
     display: flex;
     gap: 40px;
+    z-index: 4;
 }
 
 .navbarmenu>div>div:hover .navbar-menu-kids{
@@ -66,6 +68,7 @@
     display: block;
     display: flex;
     gap: 40px;
+    z-index: 4;
  }
 
  .navbarmenu>div>div:hover .navbar-menu-living{
@@ -82,6 +85,8 @@
     display: block;
     display: flex;
     gap: 40px;
+    z-index: 4;
+    
  }
 
  .navbarmenu>div>div:hover .navbar-menu-beauty{
@@ -97,6 +102,7 @@
     display: block;
     display: flex;
     gap: 40px;
+    z-index: 4;
  }
 
 
@@ -109,6 +115,7 @@
     position:absolute;
     margin-top: 0px;
     display: block;
+    z-index: 4;
  }
 
 .navbar-menu-mens>div:nth-child(even){

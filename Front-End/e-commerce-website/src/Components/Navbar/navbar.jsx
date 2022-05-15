@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { NavbarMenu } from "../NavbarMenu/navbarmenu";
-
+import { Link } from "react-router-dom";
 import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
@@ -33,10 +33,12 @@ export const Navbar = () => {
 
   return (
     <div className="navbar-header">
+     <Link to="/" >
       <img
         className="navbar-image"
         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxCFBaj928OdJ7RTEi8gJFPvHphBLxZv0fpA&usqp=CAU"
       />
+     </Link>
 
       <NavbarMenu />
       <div className="navbar-search">
@@ -44,6 +46,7 @@ export const Navbar = () => {
       </div>
       <div className="navbar-right">
         <div>
+
           <PermIdentityIcon fontSize="medium" />
           <div className="ProfileIcon">
             <Button

@@ -48,12 +48,15 @@ export const IndividualPage=()=>{
                </div>
                <div className="individual-page-data-right">
                    <div className="individual-page-data-right-first">
-                    <h1>{ind.brand}</h1>
-                    <p>{ind.title}</p>
+                    <p className="individual-page-data-right-first-p">{ind.brand}</p>
+                    <p style={{
+                       marginTop:"-20px",
+                       fontSize:"20px",
+                       color: "#9b9da5",
+                    }}>{ind.title}</p>
                     <div className="individual-page-data-right-rating">
                         {`${ind.rating} Ratings`}
                     </div>
-                    <hr className="individual-page-data-right-horizontal"/>
                    </div>
                    <div className="individual-page-data-right-price">
                       <h2>{`Rs ${ind.price}`}</h2>

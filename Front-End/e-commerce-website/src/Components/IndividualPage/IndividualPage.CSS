@@ -1,0 +1,173 @@
+*{
+    font-family: Whitney;
+}
+
+.individual-page-data-left{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 450px;
+    width: 850px;
+}
+
+.individual-page-data-left>img{
+    width: 350px;
+    height: 440px;
+    margin: 30px 2px;
+}
+
+.individual-page-data-right{
+    padding-left: 10px;
+}
+
+.individual-page-data-right-first{
+    cursor:pointer;
+    line-height: 20px;
+    font-family: -apple-system !important;
+}
+
+.individual-page-data-right-first>p{
+    margin-top: 0px;
+}
+
+.individual-page-data-left>img:hover{
+    cursor: pointer;
+    transform: scale(1.04);
+    transition: 0.3s all ease-in-out;
+}
+
+.individual-page-data{
+    display: flex;
+}
+
+.individual-page-data-right-rating{
+    height: 25px;
+    width: 120px;
+    border: 1px solid grey;
+    padding-left: 10px;
+}
+
+.individual-page-data-right-horizontal{
+    width:600px;
+}
+
+.individual-page-data-right-price{
+    display: flex;
+    gap: 10px;
+}
+
+.individual-page-data-right-price p{
+    margin-top: 27px;
+}
+
+.individual-page-data-right-mrpprice{
+    text-decoration: line-through;
+};
+
+#individual-page-data-right-price-inclusive{
+   color: green !important;
+   margin-top: 0px !important;
+   font-size: 40px !important;
+}
+
+.individual-page-data-right-size{
+    display: flex;
+    gap: 20px;
+}
+
+.individual-page-data-right-size>div{
+    border-radius: 50%;
+    border:2px solid black;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.individual-page-data-right-size>div:hover{
+    border-color: palevioletred;
+    padding: 5px;
+}
+
+.individual-page-data-right-delivery{
+    display: flex;
+}
+
+.individual-page-data-right-truck{
+    margin: 20px 10px;
+}
+
+.individual-page-data-right-shipping{
+    display: flex;
+    width: 290px;
+    height: 10px;
+}
+
+.individual-page-data-right-shipping h3{
+   margin: 4px 15px;
+};
+
+.individual-page-data-right-exchange{
+    border:5px solid black;
+    display: flex;
+    width: 500px;
+}
+
+.individual-exchange{
+    margin-top: 5px;
+}
+
+.individual-best-offers-tag{
+    display: flex;
+    gap: 0px;
+}
+
+.individual-best-offers-tag-small{
+    margin-top: 0px;
+}
+
+.individual-best-offers-ul{
+    margin: -5px -38px;
+    list-style-type: disc;
+    line-height: 30px;
+}
+
+.individual-best-offers-ul>li>span{
+    font-size: 16px;
+    font-weight:bolder;
+}
+
+.individual-best-offers-eligible{
+    color: #ff6997;
+}
+
+.individual-best-offers-ul-2nd{
+    margin: -5px -38px;
+    list-style-type: disc;
+}
+
+.individual-best-offers-eligible-2nd{
+    color: #ff6997;
+    margin: 20px 0px;
+}
+
+.individual-best-offers-ul-3rd{
+    margin: -5px -38px;
+    list-style-type: disc;
+}
+
+.individual-best-offers-eligible-plan{
+    color: #ff6997;
+    margin: 20px 0px;
+}
+
+.individual-product-details-heading{
+    display: flex;
+}
+
+.individual-product-details-info{
+    width: 500px;
+    font-size: 18px;
+    margin: -10px 0px;
+}
+
+.individual-product-details-size{
+    margin: 10px 0px;
+}

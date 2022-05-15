@@ -10,6 +10,7 @@ import FormLabel from "@mui/material/FormLabel";
 import FormGroup from '@mui/material/FormGroup';
 import Checkbox from '@mui/material/Checkbox';
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 import "./Products.css";
 
@@ -260,6 +261,7 @@ export const Products = () => {
       <div className="products-main-data">
          {products.map((element)=>{
            return (
+            <Link to={`./${element._id}`}>
              <div>
                 <div >
                    <img height="220px" width="170px"
@@ -276,6 +278,7 @@ export const Products = () => {
                     
                 </div>
              </div>
+           </Link>
            )
          })}
       </div>

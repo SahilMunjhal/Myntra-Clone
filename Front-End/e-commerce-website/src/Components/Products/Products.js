@@ -82,7 +82,6 @@ export const Products = () => {
     let url = `${baseUrl}${path}${bag == "" ? "" : "?" + bag.substring(1)}`;
     try {
       const response = await axios.get(url);
-      // console.log(response.data);
       setProducts(response.data);
     } catch (error) {
       console.log({ message: error.message });
@@ -116,7 +115,7 @@ export const Products = () => {
             </RadioGroup>
           </FormControl>
         </div>
-        <div>
+        <div className="product-main-sidebar-filterByCategory">
           <h3>Category</h3>
           <FormGroup>
             <FormControlLabel
@@ -145,15 +144,15 @@ export const Products = () => {
             />
           </FormGroup>
         </div>
-        <div>
+        <div className="product-main-sidebar-filterByCategory">
           <h3>Brands</h3>
           <FormGroup>
             <FormControlLabel control={<Checkbox />} label="Puma" />
             <FormControlLabel control={<Checkbox />} label="Addidas" />
           </FormGroup>
         </div>
-        <div>
-          <h3>Price</h3>
+        <div className="product-main-sidebar-filterByCategory">
+          <h3 >Price</h3>
           <FormGroup>
             <FormControlLabel
               name="c1"
@@ -231,7 +230,7 @@ export const Products = () => {
                 </Select>
               </FormControl>
             </div>
-            <div>
+            {/* <div>
               <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
                 <InputLabel id="demo-select-small">Age</InputLabel>
                 <Select
@@ -249,7 +248,7 @@ export const Products = () => {
                   <MenuItem value={30}>Thirty</MenuItem>
                 </Select>
               </FormControl>
-            </div>
+            </div> */}
           </div>
           <div className="product-main-flter-right">
             <div>

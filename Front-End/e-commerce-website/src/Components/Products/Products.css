@@ -3,15 +3,15 @@
 }
 
 .products-main-sidebar{
-    border: 5px solid black;
     height: 930px;
     width: 260px;
     position: static;
 }
 
 .products-main-sidebar-filterByType{
-    height:180px;
-    width: 83%;
+    border: 2px solid #aaaaaa;
+    height:160px;
+    width: 180px;
     padding: 25px;
 }
 
@@ -61,4 +61,13 @@
 .product-element-card-info{
     padding: 10px;
     line-height: 10px;
+}
+
+.product-main-sidebar-filterByCategory{
+    border: 2px solid #aaaaaa;
+    border-top: none;
+    height:220px;
+    width: 204px;
+    margin-top: 0px;
+    padding: 1px;
 }

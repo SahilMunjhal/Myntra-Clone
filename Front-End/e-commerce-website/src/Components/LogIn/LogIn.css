@@ -1,0 +1,44 @@
+.log-in-main-div{
+    margin-top: 0px;
+    text-align: center;
+    background-color: white;
+}
+
+.log-in-logo-image{
+    margin: 20px;
+    height: 100px;
+    width: 190px;
+}
+
+.log-in-name{
+    margin-top: -30px;
+    margin-bottom: 40px;
+}
+
+.log-in-info{
+    margin-bottom: 20px;
+}
+
+.log-in-info>label{
+   font-size: 25px;
+   margin-bottom: 30px;
+}
+
+.log-in-info>input{
+    height: 40px;
+    width: 440px;
+    border:2px solid #ff006d;
+}
+
+#log-in-submit{
+    height: 45px;
+    width: 450px;
+    margin-top: 20px;
+    background-color: #ff006d;
+    border-radius: 10px;
+}
+
+.log-in-with-google{
+    display: inline-flex;
+    gap: 20px;
+}

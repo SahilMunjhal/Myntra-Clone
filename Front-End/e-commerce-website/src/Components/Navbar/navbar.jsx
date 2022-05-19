@@ -10,10 +10,13 @@ import Badge from "@mui/material/Badge";
 import { styled } from "@mui/material/styles";
 import IconButton from "@mui/material/IconButton";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+
 import "./navbar.css";
+
 
 export const Navbar = () => {
   const [anchorEl, setAnchorEl] = useState(null);
+  const [auth,SetAuth]=useState(false);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
@@ -46,7 +49,7 @@ export const Navbar = () => {
       </div>
       <div className="navbar-right">
         <div>
-
+          {}
           <PermIdentityIcon fontSize="medium" />
           <div className="ProfileIcon">
             <Button
@@ -67,9 +70,17 @@ export const Navbar = () => {
                 "aria-labelledby": "basic-button",
               }}
             >
-              <MenuItem onClick={handleClose}>Profile</MenuItem>
-              <MenuItem onClick={handleClose}>My account</MenuItem>
-              <MenuItem onClick={handleClose}>Logout</MenuItem>
+              {
+                auth ? <div>
+                  <MenuItem onClick={handleClose}>Profile</MenuItem>
+                  <MenuItem onClick={handleClose}>My account</MenuItem>
+                  <MenuItem onClick={handleClose}>Logout</MenuItem>
+                </div>  
+                : <div>
+                    <MenuItem onClick={handleClose}><Link to="/signUp">Sign-Up</Link></MenuItem>
+                    <MenuItem onClick={handleClose}><Link  to={`/logIn`}>Log-In</Link></MenuItem>
+                </div> 
+              }         
             </Menu>
           </div>
         </div>

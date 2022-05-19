@@ -1,0 +1,39 @@
+.sign-up-main-div{
+    margin-top: 0px;
+    text-align: center;
+    background-color: white;
+}
+
+.sign-up-logo-image{
+    margin: 20px;
+    height: 100px;
+    width: 190px;
+}
+
+.sign-up-name{
+    margin-top: -30px;
+    margin-bottom: 40px;
+}
+
+.sign-up-info{
+    margin-bottom: 20px;
+}
+
+.sign-up-info>label{
+   font-size: 25px;
+   margin-bottom: 30px;
+}
+
+.sign-up-info>input{
+    height: 40px;
+    width: 440px;
+    border:2px solid #ff006d;
+}
+
+#sign-up-submit{
+    height: 45px;
+    width: 450px;
+    margin-top: 20px;
+    background-color: #ff006d;
+
+}

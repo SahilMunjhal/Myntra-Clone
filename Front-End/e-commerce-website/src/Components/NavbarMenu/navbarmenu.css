@@ -1,143 +1,170 @@
-.navbarmenu>div{
-    height: 100%;
-    list-style: none;
-    display: flex;
-    gap: 30px;
-    margin:8%;
-    margin-left: 0px;
-    cursor: pointer;
+.navbarmenu > div {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 8%;
+  margin-left: 0px;
+  cursor: pointer;
 }
 
-.navbar>div>div{
-    cursor: pointer;
+
+.navbar-menu-mens,
+.navbar-menu-women,
+.navbar-menu-kids,
+.navbar-menu-living,
+.navbar-menu-beauty,
+.navbar-menu-studio {
+  display: none;
+  -webkit-transition: left .2s ease-out,width .2s ease-out;
+  transition: left .2s ease-out,width .2s ease-out;
+  width: 1060px;
+  height: 100%;
 }
 
-.navbar-menu-mens,.navbar-menu-women,.navbar-menu-kids,.navbar-menu-living,
-.navbar-menu-beauty,.navbar-menu-studio{
-    display: none;
-    width: 100%;
-    height: 100%;
+.navbarmenu > div > div span {
+  margin-top: 30px;
+  padding: 0px 15px 24px 15px;
+  z-index: 1000;
+  -webkit-transition: left .2s ease-out,width .2s ease-out;
+  transition: left .2s ease-out,width .2s ease-out
+}
+.navbarmenu > div > div span:hover 
+{
+cursor: pointer;
+border-bottom: 6px solid #ff3f6c;
+z-index: 10;
 }
 
-.navbarmenu>div>div:hover .navbar-menu-mens{
-    cursor:grab;
-    padding: 25px;
-    left: 120px;
-    right: 120px;
-    height: 360px;
-    background-color: white;
-    top: 100px;
-    position:absolute;
-    cursor: pointer;
-    margin-top: 0px;
-    border-bottom:4px solid pink;
-    display: block;
-    display: flex;
-    gap: 40px;
-    z-index: 4;
- }
-
-.navbarmenu>div>div:hover .navbar-menu-women{
-    padding: 25px;
-    left: 120px;
-    right: 120px;
-    height: 360px;
-    background-color: white;
-    top: 100px;
-    position:absolute;
-    cursor: pointer;
-    margin-top: 0px;
-    border-bottom:4px solid pink;
-    display: block;
-    display: flex;
-    gap: 40px;
-    z-index: 4;
+.navbarmenu > div > div:hover .navbar-menu-mens {
+  cursor: pointer;
+  padding: 25px;
+  left: 120px;
+  height: 360px;
+  top: 92px;
+  transition-property: left, width;
+  transition-duration: 0.2s, 0.2s;
+  transition-timing-function: ease-out, ease-out;
+  transition-delay: 0s, 0s;
+  background-color: white;
+  position: absolute;
+  cursor: pointer;
+  margin-top: 0px;
+  display: block;
+  display: flex;
+  gap: 40px;
+  z-index: 4;
 }
 
-.navbarmenu>div>div:hover .navbar-menu-kids{
-    padding: 25px;
-    left: 120px;
-    right: 120px;
-    height: 360px;
-    background-color: white;
-    top: 100px;
-    position:absolute;
-    cursor: pointer;
-    margin-top: 0px;
-    border-bottom:4px solid pink;
-    display: block;
-    display: flex;
-    gap: 40px;
-    z-index: 4;
- }
-
- .navbarmenu>div>div:hover .navbar-menu-living{
-    padding: 25px;
-    left: 120px;
-    height: 360px;
-    background-color: white;
-    top: 100px;
-    position:absolute;
-    cursor: pointer;
-    margin-top: 0px;
-    border-bottom:4px solid pink;
-    display: block;
-    display: flex;
-    gap: 40px;
-    z-index: 4;
-    
- }
-
- .navbarmenu>div>div:hover .navbar-menu-beauty{
-    padding: 25px;
-    left: 120px;
-    height: 360px;
-    background-color: white;
-    top: 100px;
-    position:absolute;
-    cursor: pointer;
-    margin-top: 0px;
-    border-bottom:4px solid pink;
-    display: block;
-    display: flex;
-    gap: 40px;
-    z-index: 4;
- }
-
- .navbar-link{
-     text-decoration: none;
-     color:#59575f;
-     font-size: 15px;
-     text-align: left;
-     display: block;
- }
-
- ul{
-    padding-left: 0px;
- }
-
- .navbar-link:hover{
-    color:rgba(0, 0, 0, 0.699);
-    font-weight:bold
- }
-
-
- .navbarmenu>div>div:hover .navbar-menu-studio{
-    padding: 25px;
-    left: 120px;
-    height: 360px;
-    background-color: white;
-    top: 80px;
-    position:absolute;
-    margin-top: 0px;
-    display: block;
-    z-index: 4;
- }
-
-.navbar-menu-mens>div:nth-child(even){
-    background-color:#e3dadb1c;
+.navbarmenu > div > div:hover .navbar-menu-women {
+  padding: 25px;
+  left: 120px;
+  right: 120px;
+  height: 360px;
+  background-color: white;
+  top: 100px;
+  -webkit-transition: left .2s ease-out,width .2s ease-out;
+  transition: left .2s ease-out,width .2s ease-out;
+  position: absolute;
+  cursor: pointer;
+  margin-top: 0px;
+  border-bottom: 4px solid pink;
+  display: block;
+  display: flex;
+  gap: 40px;
+  z-index: 4;
 }
 
-h3{
-    color:#ff3f6c;
+.navbarmenu > div > div:hover .navbar-menu-kids {
+  padding: 25px;
+  left: 120px;
+  right: 120px;
+  height: 360px;
+  background-color: white;
+  top: 100px;
+  -webkit-transition: left .2s ease-out,width .2s ease-out;
+  transition: left .2s ease-out,width .2s ease-out;
+  position: absolute;
+  cursor: pointer;
+  margin-top: 0px;
+  border-bottom: 4px solid pink;
+  display: block;
+  display: flex;
+  gap: 40px;
+  z-index: 4;
+}
+
+.navbarmenu > div > div:hover .navbar-menu-living {
+  padding: 25px;
+  left: 120px;
+  height: 360px;
+  background-color: white;
+  top: 100px;
+  -webkit-transition: left .2s ease-out,width .2s ease-out;
+  transition: left .2s ease-out,width .2s ease-out;
+  position: absolute;
+  cursor: pointer;
+  margin-top: 0px;
+  border-bottom: 4px solid pink;
+  display: block;
+  display: flex;
+  gap: 40px;
+  z-index: 4;
+}
+
+.navbarmenu > div > div:hover .navbar-menu-beauty {
+  padding: 25px;
+  left: 120px;
+  height: 360px;
+  background-color: white;
+  top: 100px;
+  -webkit-transition: left .2s ease-out,width .2s ease-out;
+  transition: left .2s ease-out,width .2s ease-out;
+  position: absolute;
+  cursor: pointer;
+  margin-top: 0px;
+  border-bottom: 4px solid pink;
+  display: block;
+  display: flex;
+  gap: 40px;
+  z-index: 4;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #59575f;
+  font-size: 15px;
+  text-align: left;
+  display: block;
+}
+
+ul {
+  padding-left: 0px;
+}
+
+.navbar-link:hover {
+  color: rgba(0, 0, 0, 0.699);
+  font-weight: bold;
+}
+
+.navbarmenu > div > div:hover .navbar-menu-studio {
+  padding: 25px;
+  left: 120px;
+  height: 360px;
+  background-color: white;
+  top: 100px;
+  -webkit-transition: left .2s ease-out,width .2s ease-out;
+  transition: left .2s ease-out,width .2s ease-out;
+  position: absolute;
+  margin-top: 0px;
+  display: block;
+  z-index: 4;
+}
+
+.navbar-menu-mens > div:nth-child(even) {
+  background-color: #e3dadb1c;
+}
+
+h3 {
+  color: #ff3f6c;
 }

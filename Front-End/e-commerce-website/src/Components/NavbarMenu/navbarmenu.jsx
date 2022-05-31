@@ -1,485 +1,2010 @@
 import "./navbarmenu.css";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export const NavbarMenu = () => {
-  const handlenavbar=(element)=>{
-    document.getElementById(element).style.display = "none"
-  }
+  const handlenavbar = (element) => {
+    document.getElementById(element).style.display = "none";
+  };
 
   return (
-    <div className="navbarmenu">
-      <div>
-        <div className="navbar-menu-mens-l1">
-          Mens
-          <div className="navbar-menu-mens">
-            <div className="navbar-menu-mens-two">
-            <div>
-              <h3>TopWear</h3>
-              <ul>
-                <Link onClick={handlenavbar}  className="navbar-link" to="/products">T-Shirts</Link>
-                <Link onClick={handlenavbar}  className="navbar-link" to="/products">Casual-Shirts</Link>
-                <Link  onClick={handlenavbar} className="navbar-link" to="/products">Formal-Shirt</Link>
-                <Link  onClick={handlenavbar} className="navbar-link" to="/products">SweatShirts</Link>
-                <Link  onClick={handlenavbar} className="navbar-link" to="/products">Sweater</Link>
-                <Link  onClick={handlenavbar} className="navbar-link" to="/products"> Jackets</Link>
-                <Link  onClick={handlenavbar} className="navbar-link" to="/products">Blazer & Coats</Link>
-                <Link  onClick={handlenavbar} className="navbar-link" to="/products">RainCoats</Link>
-              </ul>
-            </div>
-            <div>
-              <h3>Indian and Festive year</h3>
-              <ul>
-                <Link onClick={handlenavbar} className="navbar-link" to="/products">Kurta & Kurtas Set</Link>
-                <Link onClick={handlenavbar} className="navbar-link" to="/products">Sherwanis</Link>
-                <Link onClick={handlenavbar} className="navbar-link" to="/products">Nehru Jackets</Link>
-                <Link onClick={handlenavbar} className="navbar-link" to="/products">Dhotis</Link>
-              </ul>
-            </div>
-            </div>
-            <div className="navbar-menu-mens-two">
-              <div>
-                <h3>BottomWear</h3>
-                <ul>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Jeans</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Formal Trouser</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Casual Trouser</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Shorts</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">TrackPants & Trousers</Link>
-                </ul>
+    <div className="navbar-menu-container">
+      <div className="navbarmenu">
+        <div>
+          <div className="navbar-menu-mens-l1">
+            <span>Mens</span>
+            <div className="navbar-menu-mens navbar-menu-common-class navbar-menu-common-class">
+              <div className="navbar-menu-mens-two">
+                <div>
+                  <h3>TopWear</h3>
+                  <ul>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      T-Shirts
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Casual-Shirts
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Formal-Shirt
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      SweatShirts
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Sweater
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      {" "}
+                      Jackets
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Blazer & Coats
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      RainCoats
+                    </Link>
+                  </ul>
+                </div>
+                <div>
+                  <h3>Indian and Festive year</h3>
+                  <ul>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Kurta & Kurtas Set
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Sherwanis
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Nehru Jackets
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Dhotis
+                    </Link>
+                  </ul>
+                </div>
               </div>
-              <div>
-                <h3>Innerwear & SleepWear</h3>
-                <ul>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Brief & Thunks</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Boxers</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Vests</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">SleepWear & LongeWear</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Thermals</Link>
-                </ul>
+              <div className="navbar-menu-mens-two">
+                <div>
+                  <h3>BottomWear</h3>
+                  <ul>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Jeans
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Formal Trouser
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Casual Trouser
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Shorts
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      TrackPants & Trousers
+                    </Link>
+                  </ul>
+                </div>
+                <div>
+                  <h3>Innerwear & SleepWear</h3>
+                  <ul>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Brief & Thunks
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Boxers
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Vests
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      SleepWear & LongeWear
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Thermals
+                    </Link>
+                  </ul>
+                </div>
               </div>
-            </div>
-            <div className="navbar-menu-mens-two">
-              <div>
-                <h3>Shoes</h3>
-                <ul>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Casual-Shoes</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Formal Shoes</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Sports Shoes</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Sneakers</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Sandals & Loaters </Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Flip-Flops</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Socks</Link>
-                </ul>
+              <div className="navbar-menu-mens-two">
+                <div>
+                  <h3>Shoes</h3>
+                  <ul>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Casual-Shoes
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Formal Shoes
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Sports Shoes
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Sneakers
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Sandals & Loaters{" "}
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Flip-Flops
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Socks
+                    </Link>
+                  </ul>
+                </div>
+                <div>
+                  <h3>Personal-Care & Groomings</h3>
+                  <h3>Sunglasses & Frames</h3>
+                  <h3>Watches</h3>
+                </div>
               </div>
-              <div>
-                <h3>Personal-Care & Groomings</h3>
-                <h3>Sunglasses & Frames</h3>
-                <h3>Watches</h3>
+              <div className="navbar-menu-mens-two">
+                <div>
+                  <h3>Sports and Active-Wear</h3>
+                  <ul>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Casual-Shoes
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Formal Shoes
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Sports Shoes
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Sneakers
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Sandals & Loaters{" "}
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Flip-Flops
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Jackets & SweatShirts
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Sports-Activewear
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Swimwear
+                    </Link>
+                  </ul>
+                </div>
+                <div>
+                  <h3>Gadgets</h3>
+                  <ul>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Smart Wearable
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Fitness Gadgets
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      HeadPhones
+                    </Link>
+                  </ul>
+                </div>
               </div>
-            </div>
-            <div className="navbar-menu-mens-two">
-              <div>
-                <h3>Sports and Active-Wear</h3>
-                <ul>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Casual-Shoes</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Formal Shoes</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Sports Shoes</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Sneakers</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Sandals & Loaters </Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Flip-Flops</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Jackets & SweatShirts</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Sports-Activewear</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Swimwear</Link>
-                </ul>
-              </div>
-              <div>
-                <h3>Gadgets</h3>
-                <ul>
-                 <Link onClick={handlenavbar} className="navbar-link" to="/products">Smart Wearable</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Fitness Gadgets</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">HeadPhones</Link>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div>Womens
-        <div className="navbar-menu-women">
-            <div className="navbar-menu-mens-two">
-            <div>
-              <h3>Indian & Fusion Wear</h3>
-              <ul>
-                <Link onClick={handlenavbar} className="navbar-link" to="/products">T-Shirts</Link>
-                <Link onClick={handlenavbar} className="navbar-link" to="/products">Casual-Shirts</Link>
-                <Link onClick={handlenavbar} className="navbar-link" to="/products">Formal-Shirt</Link>
-                <Link onClick={handlenavbar} className="navbar-link" to="/products">SweatShirts</Link>
-                <Link onClick={handlenavbar} className="navbar-link" to="/products">Sweater</Link>
-                <Link onClick={handlenavbar} className="navbar-link" to="/products">Jackets</Link>
-                <Link onClick={handlenavbar} className="navbar-link" to="/products">Blazer & Coats</Link>
-                <Link onClick={handlenavbar} className="navbar-link" to="/products">RainCoats</Link>
-              </ul>
-            </div>
-            <div>
-              <h3>Indian and Festive year</h3>
-              <ul>
-                <Link onClick={handlenavbar} className="navbar-link" to="/products">Kurta & Kurtas Set</Link>
-                <Link onClick={handlenavbar} className="navbar-link" to="/products">Sherwanis</Link>
-                <Link onClick={handlenavbar} className="navbar-link" to="/products">Nehru Jackets</Link>
-                <Link onClick={handlenavbar} className="navbar-link" to="/products">Dhotis</Link>
-              </ul>
-            </div>
-            </div>
-            <div className="navbar-menu-mens-two">
-              <div>
-                <h3>BottomWear</h3>
-                <ul>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Jeans</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Formal Trouser</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Casual Trouser</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Shorts</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">TrackPants & Trousers</Link>
-                </ul>
-              </div>
-              <div>
-                <h3>Innerwear & SleepWear</h3>
-                <ul>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Brief & Thunks</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Boxers</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Vests</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">SleepWear & LongeWear</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Thermals</Link>
-                </ul>
-              </div>
-            </div>
-            <div className="navbar-menu-mens-two">
-              <div>
-                <h3>Shoes</h3>
-                <ul>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Casual-Shoes</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Formal Shoes</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Sports Shoes</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Sneakers</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Sandals & Loaters </Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Flip-Flops</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Socks</Link>
-                </ul>
-              </div>
-              <div>
-                <h3>Personal-Care & Groomings</h3>
-                <h3>Sunglasses & Frames</h3>
-                <h3>Watches</h3>
-              </div>
-            </div>
-            <div className="navbar-menu-mens-two">
-              <div>
-                <h3>Sports and Active-Wear</h3>
-                <ul>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Casual-Shoes</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Formal Shoes</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Sports Shoes</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Sneakers</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Sandals & Loaters </Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Flip-Flops</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Jackets & SweatShirts</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Sports-Activewear</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Swimwear</Link>
-                </ul>
-              </div>
-              <div>
-                <h3>Gadgets</h3>
-                <ul>
-                 <Link onClick={handlenavbar} className="navbar-link" to="/products">Smart Wearable</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Fitness Gadgets</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">HeadPhones</Link>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div>Kids
-        <div className="navbar-menu-kids">
-            <div className="navbar-menu-mens-two">
-            <div>
-              <h3>TopWear</h3>
-              <ul>
-                <Link onClick={handlenavbar} className="navbar-link" to="/products">T-Shirts</Link>
-                <Link onClick={handlenavbar} className="navbar-link" to="/products">Casual-Shirts</Link>
-                <Link onClick={handlenavbar} className="navbar-link" to="/products">Formal-Shirt</Link>
-                <Link onClick={handlenavbar} className="navbar-link" to="/products">SweatShirts</Link>
-                <Link onClick={handlenavbar} className="navbar-link" to="/products">Sweater</Link>
-                <Link onClick={handlenavbar} className="navbar-link" to="/products">Jackets</Link>
-                <Link onClick={handlenavbar} className="navbar-link" to="/products">Blazer & Coats</Link>
-                <Link onClick={handlenavbar} className="navbar-link" to="/products">RainCoats</Link>
-              </ul>
-            </div>
-            <div>
-              <h3>Indian and Festive year</h3>
-              <ul>
-                <Link onClick={handlenavbar} className="navbar-link" to="/products">Kurta & Kurtas Set</Link>
-                <Link onClick={handlenavbar} className="navbar-link" to="/products">Sherwanis</Link>
-                <Link onClick={handlenavbar} className="navbar-link" to="/products">Nehru Jackets</Link>
-                <Link onClick={handlenavbar} className="navbar-link" to="/products">Dhotis</Link>
-              </ul>
-            </div>
-            </div>
-            <div className="navbar-menu-mens-two">
-              <div>
-                <h3>BottomWear</h3>
-                <ul>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Jeans</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Formal Trouser</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Casual Trouser</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Shorts</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">TrackPants & Trousers</Link>
-                </ul>
-              </div>
-              <div>
-                <h3>Innerwear & SleepWear</h3>
-                <ul>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Brief & Thunks</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Boxers</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Vests</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">SleepWear & LongeWear</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Thermals</Link>
-                </ul>
-              </div>
-            </div>
-            <div className="navbar-menu-mens-two">
-              <div>
-                <h3>Shoes</h3>
-                <ul>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Casual-Shoes</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Formal Shoes</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Sports Shoes</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Sneakers</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Sandals & Loaters </Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Flip-Flops</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Socks</Link>
-                </ul>
-              </div>
-              <div>
-                <h3>Personal-Care & Groomings</h3>
-                <h3>Sunglasses & Frames</h3>
-                <h3>Watches</h3>
-              </div>
-            </div>
-            <div className="navbar-menu-mens-two">
-              <div>
-                <h3>Sports and Active-Wear</h3>
-                <ul>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Casual-Shoes</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Formal Shoes</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Sports Shoes</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Sneakers</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Sandals & Loaters </Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Flip-Flops</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Jackets & SweatShirts</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Sports-Activewear</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Swimwear</Link>
-                </ul>
-              </div>
-              <div>
-                <h3>Gadgets</h3>
-                <ul>
-                 <Link onClick={handlenavbar} className="navbar-link" to="/products">Smart Wearable</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Fitness Gadgets</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">HeadPhones</Link>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div>Home
-        <div className="navbar-menu-kids">
-            <div className="navbar-menu-mens-two">
-            <div>
-              <h3>TopWear</h3>
-              <ul>
-                <Link onClick={handlenavbar} className="navbar-link" to="/products">T-Shirts</Link>
-                <Link onClick={handlenavbar} className="navbar-link" to="/products">Casual-Shirts</Link>
-                <Link onClick={handlenavbar} className="navbar-link" to="/products">Formal-Shirt</Link>
-                <Link onClick={handlenavbar} className="navbar-link" to="/products">SweatShirts</Link>
-                <Link onClick={handlenavbar} className="navbar-link" to="/products">Sweater</Link>
-                <Link onClick={handlenavbar} className="navbar-link" to="/products">Jackets</Link>
-                <Link onClick={handlenavbar} className="navbar-link" to="/products">Blazer & Coats</Link>
-                <Link onClick={handlenavbar} className="navbar-link" to="/products">RainCoats</Link>
-              </ul>
-            </div>
-            <div>
-              <h3>Indian and Festive year</h3>
-              <ul>
-                <Link onClick={handlenavbar} className="navbar-link" to="/products">Kurta & Kurtas Set</Link>
-                <Link onClick={handlenavbar} className="navbar-link" to="/products">Sherwanis</Link>
-                <Link onClick={handlenavbar} className="navbar-link" to="/products">Nehru Jackets</Link>
-                <Link onClick={handlenavbar} className="navbar-link" to="/products">Dhotis</Link>
-              </ul>
-            </div>
-            </div>
-            <div className="navbar-menu-mens-two">
-              <div>
-                <h3>BottomWear</h3>
-                <ul>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Jeans</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Formal Trouser</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Casual Trouser</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Shorts</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">TrackPants & Trousers</Link>
-                </ul>
-              </div>
-              <div>
-                <h3>Innerwear & SleepWear</h3>
-                <ul>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Brief & Thunks</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Boxers</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Vests</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">SleepWear & LongeWear</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Thermals</Link>
-                </ul>
-              </div>
-            </div>
-            <div className="navbar-menu-mens-two">
-              <div>
-                <h3>Shoes</h3>
-                <ul>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Casual-Shoes</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Formal Shoes</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Sports Shoes</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Sneakers</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Sandals & Loaters </Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Flip-Flops</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Socks</Link>
-                </ul>
-              </div>
-              <div>
-                <h3>Personal-Care & Groomings</h3>
-                <h3>Sunglasses & Frames</h3>
-                <h3>Watches</h3>
-              </div>
-            </div>
-            <div className="navbar-menu-mens-two">
-              <div>
-                <h3>Sports and Active-Wear</h3>
-                <ul>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Casual-Shoes</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Formal Shoes</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Sports Shoes</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Sneakers</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Sandals & Loaters </Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Flip-Flops</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Jackets & SweatShirts</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Sports-Activewear</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Swimwear</Link>
-                </ul>
-              </div>
-              <div>
-                <h3>Gadgets</h3>
-                <ul>
-                 <Link onClick={handlenavbar} className="navbar-link" to="/products">Smart Wearable</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Fitness Gadgets</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">HeadPhones</Link>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div>Beauty 
-        <div className="navbar-menu-living">
-            <div className="navbar-menu-mens-two">
-            <div>
-              <h3>TopWear</h3>
-              <ul>
-                <Link onClick={handlenavbar} className="navbar-link" to="/products">T-Shirts</Link>
-                <Link onClick={handlenavbar} className="navbar-link" to="/products">Casual-Shirts</Link>
-                <Link onClick={handlenavbar} className="navbar-link" to="/products">Formal-Shirt</Link>
-                <Link onClick={handlenavbar} className="navbar-link" to="/products">SweatShirts</Link>
-                <Link onClick={handlenavbar} className="navbar-link" to="/products">Sweater</Link>
-                <Link onClick={handlenavbar} className="navbar-link" to="/products">Jackets</Link>
-                <Link onClick={handlenavbar} className="navbar-link" to="/products">Blazer & Coats</Link>
-                <Link onClick={handlenavbar} className="navbar-link" to="/products">RainCoats</Link>
-              </ul>
-            </div>
-            <div>
-              <h3>Indian and Festive year</h3>
-              <ul>
-                <Link onClick={handlenavbar} className="navbar-link" to="/products">Kurta & Kurtas Set</Link>
-                <Link onClick={handlenavbar} className="navbar-link" to="/products">Sherwanis</Link>
-                <Link onClick={handlenavbar} className="navbar-link" to="/products">Nehru Jackets</Link>
-                <Link onClick={handlenavbar} className="navbar-link" to="/products">Dhotis</Link>
-              </ul>
-            </div>
-            </div>
-            <div className="navbar-menu-mens-two">
-              <div>
-                <h3>BottomWear</h3>
-                <ul>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Jeans</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Formal Trouser</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Casual Trouser</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Shorts</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">TrackPants & Trousers</Link>
-                </ul>
-              </div>
-              <div>
-                <h3>Innerwear & SleepWear</h3>
-                <ul>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Brief & Thunks</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Boxers</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Vests</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">SleepWear & LongeWear</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Thermals</Link>
-                </ul>
-              </div>
-            </div>
-            <div className="navbar-menu-mens-two">
-              <div>
-                <h3>Shoes</h3>
-                <ul>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Casual-Shoes</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Formal Shoes</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Sports Shoes</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Sneakers</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Sandals & Loaters </Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Flip-Flops</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Socks</Link>
-                </ul>
-              </div>
-              <div>
-                <h3>Personal-Care & Groomings</h3>
-                <h3>Sunglasses & Frames</h3>
-                <h3>Watches</h3>
-              </div>
-            </div>
-            <div className="navbar-menu-mens-two">
-              <div>
-                <h3>Sports and Active-Wear</h3>
-                <ul>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Casual-Shoes</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Formal Shoes</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Sports Shoes</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Sneakers</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Sandals & Loaters </Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Flip-Flops</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Jackets & SweatShirts</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Sports-Activewear</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Swimwear</Link>
-                </ul>
-              </div>
-              <div>
-                <h3>Gadgets</h3>
-                <ul>
-                 <Link onClick={handlenavbar} className="navbar-link" to="/products">Smart Wearable</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">Fitness Gadgets</Link>
-                  <Link onClick={handlenavbar} className="navbar-link" to="/products">HeadPhones</Link>
-                </ul>
+              <div className="navbar-menu-mens-two">
+                <div>
+                  <h3>Fashion Accessories</h3>
+                  <ul>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Wallets
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Belts
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Perfumes & Body Mists
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Trimmers
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Deodrants
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Ties,Cufflins & Pockets Square
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Accessory Gift Sets
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Caps & Hats
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Muffler,Scales & Gloves
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      PhonevCases
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Wrings & WristWear
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Helments
+                    </Link>
+                  </ul>
+                </div>
+                <div>
+                  <h3>Bag & BagPacks</h3>
+                  <h3>Luggages & Trolleys</h3>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div>Studio
-           <div className="navbar-menu-studio">
-           <img height="300px" width="60%"
-           src="https://constant.myntassets.com/web/assets/img/sudio-nav-banner.png"/>
-           </div>
+          <div>
+            <span>Womens</span>
+            <div className="navbar-menu-women navbar-menu-common-class">
+              <div className="navbar-menu-mens-two">
+                <div>
+                  <h3>Indian & Fusion Wear</h3>
+                  <ul>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Kurta & Suits
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Kurta Tunics & Tops
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Saree
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      EthicWear
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Lagging Salwar & Churidars
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Skirts & Plazzos
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Dress Materials
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Lengha & Cholis
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Duptta & Shawals
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Jackets
+                    </Link>
+                  </ul>
+                </div>
+                <div>
+                  <h3>Belts,Scraves & More</h3>
+                  <h3>Watches & Wearable</h3>
+                </div>
+              </div>
+              <div className="navbar-menu-mens-two">
+                <div>
+                  <h3>Western Wear</h3>
+                  <ul>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Dresses
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Top & T-Shirts
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Jeans
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Trousers & Caparies
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Shorts & Skirts
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Co-Ords
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Play & Suits
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Jump Suits
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Shrugs
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Sweaters & SweatShirts
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Jackets & Coats
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Blazer & Webcoats
+                    </Link>
+                  </ul>
+                </div>
+                <div>
+                  <h3>Plus & Size</h3>
+                </div>
+              </div>
+              <div className="navbar-menu-mens-two">
+                <div>
+                  <h3>Maternity</h3>
+                  <h3>Sunglasses & Frames</h3>
+                  <h3>FootWear</h3>
+                  <ul>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Flats
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Casual Shoes
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Heels
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Boots
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Sports Shoes & Floaters
+                    </Link>
+                  </ul>
+                </div>
+                <div>
+                  <h3>Sports & ActiveWear</h3>
+                  <ul>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Clothing
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      FootWear
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Sports Acessories
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Sports Equipments
+                    </Link>
+                  </ul>
+                </div>
+              </div>
+              <div className="navbar-menu-mens-two">
+                <div>
+                  <h3>Lingre & SleepWear</h3>
+                  <ul>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Bra
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Briefs
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      ShapeWear
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      SleepWear & LongueWear
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      SwimWear{" "}
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Camisoles & ThungWears
+                    </Link>
+                  </ul>
+                </div>
+                <div>
+                  <h3>Beauty & PersonnelWear</h3>
+                  <ul>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Make-Up
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Skin-Care
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Premium-Beauty
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Lip-Stick
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Fragnances
+                    </Link>
+                  </ul>
+                </div>
+              </div>
+              <div className="navbar-menu-mens-two">
+                <div>
+                  <h3>Gadgets</h3>
+                  <ul>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Smart Werables
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Fitness Gadgets
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      HeadPhones
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Speakers
+                    </Link>
+                  </ul>
+                </div>
+                <div>
+                  <h3>Jewellery</h3>
+                  <ul>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Fashion Jewellery
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Fine jewellery
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Earings
+                    </Link>
+                  </ul>
+                </div>
+                <h3>BagPacks</h3>
+                <h3>HandBags & Wallets</h3>
+                <h3>Luggage & Trolleys</h3>
+              </div>
+            </div>
+          </div>
+          <div>
+            <span>Kids</span>
+            <div className="navbar-menu-kids navbar-menu-common-class">
+              <div className="navbar-menu-mens-two">
+                <div>
+                  <h3>TopWear</h3>
+                  <ul>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      T-Shirts
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Shirts
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Shorts
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Jeans
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Trousers
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Clothing Sets
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Ethics Wear
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      RainCoats
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Trank Pajmas & TrackWear
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Jackets,Sweaters & SweatShirts
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      InnerWear & Thermals
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      NightWear & LongueWear
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Value & Packs
+                    </Link>
+                  </ul>
+                </div>
+              </div>
+              <div className="navbar-menu-mens-two">
+                <div>
+                  <h3>Girls Clothing</h3>
+                  <ul>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Dresses
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Tops
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      T-Shirts
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Clothing Sets
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Lengha & Cholis
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Kurta Sets
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      PartyWear
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Dungrees & JumpSuits
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Skirts & Shorts
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Tights & Laggings
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Jeans,Trosers & Capparies
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Jackets,Sweater & SweatShirts
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      InnerWear & Thermals
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      NightWear & LongueWear
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Value & Packs
+                    </Link>
+                  </ul>
+                </div>
+              </div>
+              <div className="navbar-menu-mens-two">
+                <div>
+                  <h3>FootWear</h3>
+                  <ul>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Casual-Shoes
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      FlipFloaps
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Sports Shoes
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Flats
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Sandals{" "}
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Heels
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      School Shoes
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Socks
+                    </Link>
+                  </ul>
+                </div>
+                <div>
+                  <h3>Toys</h3>
+                  <ul>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Learning & Developments
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Activity Toys
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Soft Toys
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Active Figure / PlaySets
+                    </Link>
+                  </ul>
+                </div>
+              </div>
+              <div className="navbar-menu-mens-two">
+                <div>
+                  <h3>Infants</h3>
+                  <ul>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Body-Suits
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Romper & SleepSuits
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Clothins Sets
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      T-Shirts & Tops
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Dresses{" "}
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      BottomWear
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      WinterWear
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      InnerWear & SleepWear
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Infant Care
+                    </Link>
+                  </ul>
+                </div>
+                <div>
+                  <h3>Home & baths</h3>
+                  <h3>Personnel Care</h3>
+                </div>
+              </div>
+              <div className="navbar-menu-mens-two">
+                <div>
+                  <h3>Kids & Accessories</h3>
+                  <ul>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Bags & BagPacks
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Watches
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Jewwelry & Acceessories
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      SunGlasses
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Mask & Protective Wear{" "}
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Caps & Hats
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      WinterWear
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      InnerWear & SleepWear
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Infant Care
+                    </Link>
+                  </ul>
+                </div>
+                <div>
+                  <h3>Home & baths</h3>
+                  <h3>Personnel Care</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <span>Home</span>
+            <div className="navbar-menu-kids navbar-menu-common-class">
+              <div className="navbar-menu-mens-two">
+                <div>
+                  <h3>TopWear</h3>
+                  <ul>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      T-Shirts
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Casual-Shirts
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Formal-Shirt
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      SweatShirts
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Sweater
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Jackets
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Blazer & Coats
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      RainCoats
+                    </Link>
+                  </ul>
+                </div>
+                <div>
+                  <h3>Indian and Festive year</h3>
+                  <ul>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Kurta & Kurtas Set
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Sherwanis
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Nehru Jackets
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Dhotis
+                    </Link>
+                  </ul>
+                </div>
+              </div>
+              <div className="navbar-menu-mens-two">
+                <div>
+                  <h3>BottomWear</h3>
+                  <ul>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Jeans
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Formal Trouser
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Casual Trouser
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Shorts
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      TrackPants & Trousers
+                    </Link>
+                  </ul>
+                </div>
+                <div>
+                  <h3>Innerwear & SleepWear</h3>
+                  <ul>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Brief & Thunks
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Boxers
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Vests
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      SleepWear & LongeWear
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Thermals
+                    </Link>
+                  </ul>
+                </div>
+              </div>
+              <div className="navbar-menu-mens-two">
+                <div>
+                  <h3>Shoes</h3>
+                  <ul>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Casual-Shoes
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Formal Shoes
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Sports Shoes
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Sneakers
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Sandals & Loaters{" "}
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Flip-Flops
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Socks
+                    </Link>
+                  </ul>
+                </div>
+                <div>
+                  <h3>Personal-Care & Groomings</h3>
+                  <h3>Sunglasses & Frames</h3>
+                  <h3>Watches</h3>
+                </div>
+              </div>
+              <div className="navbar-menu-mens-two">
+                <div>
+                  <h3>Sports and Active-Wear</h3>
+                  <ul>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Casual-Shoes
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Formal Shoes
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Sports Shoes
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Sneakers
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Sandals & Loaters{" "}
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Flip-Flops
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Jackets & SweatShirts
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Sports-Activewear
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Swimwear
+                    </Link>
+                  </ul>
+                </div>
+                <div>
+                  <h3>Gadgets</h3>
+                  <ul>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Smart Wearable
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Fitness Gadgets
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      HeadPhones
+                    </Link>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <span>Beauty</span>
+            <div className="navbar-menu-living navbar-menu-common-class">
+              <div className="navbar-menu-mens-two">
+                <div>
+                  <h3>TopWear</h3>
+                  <ul>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      T-Shirts
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Casual-Shirts
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Formal-Shirt
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      SweatShirts
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Sweater
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Jackets
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Blazer & Coats
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      RainCoats
+                    </Link>
+                  </ul>
+                </div>
+                <div>
+                  <h3>Indian and Festive year</h3>
+                  <ul>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Kurta & Kurtas Set
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Sherwanis
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Nehru Jackets
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Dhotis
+                    </Link>
+                  </ul>
+                </div>
+              </div>
+              <div className="navbar-menu-mens-two">
+                <div>
+                  <h3>BottomWear</h3>
+                  <ul>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Jeans
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Formal Trouser
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Casual Trouser
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Shorts
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      TrackPants & Trousers
+                    </Link>
+                  </ul>
+                </div>
+                <div>
+                  <h3>Innerwear & SleepWear</h3>
+                  <ul>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Brief & Thunks
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Boxers
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Vests
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      SleepWear & LongeWear
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Thermals
+                    </Link>
+                  </ul>
+                </div>
+              </div>
+              <div className="navbar-menu-mens-two">
+                <div>
+                  <h3>Shoes</h3>
+                  <ul>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Casual-Shoes
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Formal Shoes
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Sports Shoes
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Sneakers
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Sandals & Loaters{" "}
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Flip-Flops
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Socks
+                    </Link>
+                  </ul>
+                </div>
+                <div>
+                  <h3>Personal-Care & Groomings</h3>
+                  <h3>Sunglasses & Frames</h3>
+                  <h3>Watches</h3>
+                </div>
+              </div>
+              <div className="navbar-menu-mens-two">
+                <div>
+                  <h3>Sports and Active-Wear</h3>
+                  <ul>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Casual-Shoes
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Formal Shoes
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Sports Shoes
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Sneakers
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Sandals & Loaters{" "}
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Flip-Flops
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Jackets & SweatShirts
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Sports-Activewear
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Swimwear
+                    </Link>
+                  </ul>
+                </div>
+                <div>
+                  <h3>Gadgets</h3>
+                  <ul>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Smart Wearable
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      Fitness Gadgets
+                    </Link>
+                    <Link
+                      onClick={handlenavbar}
+                      className="navbar-link"
+                      to="/products"
+                    >
+                      HeadPhones
+                    </Link>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <span>Studio</span>
+            <div className="navbar-menu-studio navbar-menu-common-class">
+              <img
+                height="300px"
+                width="60%"
+                src="https://constant.myntassets.com/web/assets/img/sudio-nav-banner.png"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>

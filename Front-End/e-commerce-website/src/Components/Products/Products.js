@@ -11,6 +11,7 @@ import FormGroup from "@mui/material/FormGroup";
 import Checkbox from "@mui/material/Checkbox";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 import "./Products.css";
 import { baseUrl } from "../../UniversalData/universalData";
@@ -18,7 +19,7 @@ import { baseUrl } from "../../UniversalData/universalData";
 export const Products = () => {
   const [filter, setFilter] = useState("");
   const [category, setCategory] = useState([]);
-  // const [brand, seBbrand] = useState([]);
+  const [brand, setBrand] = useState([]);
   const [price, setPrice] = useState({
     c1: false,
     c2: false,
@@ -26,14 +27,24 @@ export const Products = () => {
     c4: false,
   });
 
-  const [size, setSize] = useState("");
-  const [products, setProducts] = useState([]);
   const [country, setCountry] = useState("");
-  const [age, setAge] = useState("");
+  const [size, setSize] = useState("");
+  const [sorting,setSorting] = useState("");
+  const [products,setProducts]=useState([]);
+  
+  let showProducts=[];
+
+
+  const data=useSelector(state=>state.homedata);
+
+  data.length==0?showProducts=products:showProducts=data;
+  console.log(data);
+
 
   const handleChangeFilter = (event) => {
     setFilter(event.target.value);
   };
+
   const handleChangeCategory = (e) => {
     if (category.includes(e.target.value)) {
       const temp = category.filter((elem) => elem != e.target.value);
@@ -42,14 +53,22 @@ export const Products = () => {
       setCategory([...category, e.target.value]);
     }
   };
+
+  const handleBrand=(event)=>{
+    console.log(event.target.value)
+     if(brand.includes(event.target.value)) {
+       const temp=brand.filter((elem) => elem != event.target.value);
+       setBrand(temp);
+     }else{
+       setBrand([...brand,event.target.value]);
+     }
+  }
+
   const handleChangePrice = (e) => {
     const { name } = e.target;
     setPrice({ ...price, [name]: !price[name] });
   };
-  console.log({ price });
-  const handleChange = (event) => {
-    setAge(event.target.value);
-  };
+ 
 
   const handleChangeCountry = (event) => {
     setCountry(event.target.value);
@@ -59,19 +78,33 @@ export const Products = () => {
     setSize(event.target.value);
   };
 
-  console.log(category);
+  const handleSorting=(event)=>{
+     setSorting(event.target.value);
+  }
 
   useEffect(() => {
     datafn();
-  }, [filter, country, size, category, price]);
+  }, [filter, country,brand, size, category, price,sorting]);
 
   const datafn = async () => {
     const path = `/products`;
     let query = {};
     if (filter != "") query.filter = filter;
+
+    if(country!="") query.country = country;
+
+    if(size!="") query.size = size;
+
+    if(sorting!="") query.sorting=sorting;
+
     if (category.length) {
       category.forEach((el, index) => (query[`category${index + 1}`] = el));
     }
+     
+    if(brand.length) {
+      brand.forEach((el,index) =>(query[`brand${index+1}`]=el));
+    }
+
     for (let x in price) {
       if (price[x]) query = { ...query, [x]: price[x] };
     }
@@ -80,6 +113,7 @@ export const Products = () => {
       bag += `&${x}=${query[x]}`;
     }
     let url = `${baseUrl}${path}${bag == "" ? "" : "?" + bag.substring(1)}`;
+    console.log(url);
     try {
       const response = await axios.get(url);
       setProducts(response.data);
@@ -147,8 +181,10 @@ export const Products = () => {
         <div className="product-main-sidebar-filterByCategory">
           <h3>Brands</h3>
           <FormGroup>
-            <FormControlLabel control={<Checkbox />} label="Puma" />
-            <FormControlLabel control={<Checkbox />} label="Addidas" />
+            <FormControlLabel control={<Checkbox />} label="Puma"
+             value="Puma" onChange={handleBrand}/>
+            <FormControlLabel control={<Checkbox />} label="Addidas"
+             value="Addidas" onChange={handleBrand} />
           </FormGroup>
         </div>
         <div className="product-main-sidebar-filterByCategory">
@@ -257,27 +293,28 @@ export const Products = () => {
                 <Select
                   labelId="demo-select-small"
                   id="demo-select-small"
-                  value={age}
-                  label="Age"
-                  onChange={handleChange}
+                  value={sorting}
+                  label="Sort By"
+                  onChange={handleSorting}
                 >
                   <MenuItem value="">
                     <em>None</em>
                   </MenuItem>
-                  <MenuItem value={10}>Ten</MenuItem>
-                  <MenuItem value={20}>Twenty</MenuItem>
-                  <MenuItem value={30}>Thirty</MenuItem>
+                  <MenuItem value={'asc'}>Ascending</MenuItem>
+                  <MenuItem value={'dsc'}>Dscending</MenuItem>
                 </Select>
               </FormControl>
             </div>
           </div>
         </div>
         <div className="products-main-data">
-          {products.map((element) => {
+          {showProducts.map((element) => {
             return (
               <Link to={`./${element._id}`}>
-                <div>
-                  <div>
+                  {element.status==0?<div>
+                    <img height="220px" width="170px" src={element.url} 
+                     className="not-found" />
+                  </div>: <div>
                     <img height="220px" width="170px" src={element.url} />
                     <div className="product-element-card-info">
                       <h3>{element.brand}</h3>
@@ -288,8 +325,8 @@ export const Products = () => {
                         <span>{`(${element.discount}% OFF)`}</span>
                       </div>
                     </div>
-                  </div>
                 </div>
+                  }
               </Link>
             );
           })}

@@ -42,6 +42,12 @@
     grid-template-columns: repeat(4,1fr);
 }
 
+.not-found{
+    margin:50px 300px;
+    height:300px;
+    width: 300px;
+}
+
 .product-price{
     display: flex;
     gap: 10px;

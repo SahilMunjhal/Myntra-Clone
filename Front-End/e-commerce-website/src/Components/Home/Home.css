@@ -1,15 +1,41 @@
-
 .home-image{
     padding: 0px;    
     margin: 0px;
-    height: 350px;
     margin: 10px 5%;
-    width: 87%;
+};
 
+.home-crousel-unique{
+    position: relative !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    background-color: brown !important;
 }
 
-#home-container{
+.home-container{
     background-color: white;
+}
+
+.home-crousel-left{
+    position: absolute;
+    top: 50%;
+    left:32px;
+    font-size: 40px;
+}
+
+.home-crousel-right{
+    position: absolute;
+    top: 50%;
+    right: 32px;
+    font-size: 40px;
+}
+
+.home-container>div:first{
+    position: relative ;
+    display: flex;
+    border: 10px solid black;
+    justify-content: center;
+    align-items: center;
 }
 
 .home-discount-container{

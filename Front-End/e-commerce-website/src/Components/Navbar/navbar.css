@@ -1,46 +1,72 @@
-.navbar-image{
-    height: 70px;
-    width: 120px;
-    margin: 20px;
-    margin-left: 70px;
+.navbar-image {
+  height: 70px;
+  width: 80px;
+  margin: 20px;
+  margin-left: 70px;
 }
 
-.navbar-header{
-    display: flex;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(241, 239, 239, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+.navbar-header-container {
+  height: 80px;
+}
+.navbar-header {
+  background-color: white;
+  width: 100%;
+  z-index: 5;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(241, 239, 239, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-.navbar-search{
-    margin: 0px 40px;
-    margin-left: 20px;
+.navbar-search {
+  margin: 0px 40px;
+  margin-left: 20px;
 }
 
-.navbar-search>input{
-   margin: 18% 10%;
-   height: 30%;
-   width: 160%;
-   padding: 2%;
+.navbar-search > input {
+  margin: 18% 10%;
+  height: 30%;
+  width: 160%;
+  padding: 2%;
 }
 
-.navbar-right{
-    margin-top: 25px;
-    margin-left: 13%;
-    display: flex;
-    gap: 18px;
+.navbar-right {
+  margin-top: 25px;
+  margin-left: 13%;
+  display: flex;
+  gap: 18px;
 }
 
-.navbar-wishlist{
-   margin-top: -2px;
+.navbar-wishlist {
+  margin-top: -2px;
 }
 
-.navbar-bag{
-    margin-top: -5px;
+.navbar-bag {
+  margin-top: -5px;
 }
 
-.navbar-bag>h3{
-    margin-top: -7px;
+.navbar-bag > h3 {
+  margin-top: -7px;
 }
 
-#basicButton{
-    margin-top:  -5px;
+#basicButton {
+  margin-top: -5px;
+}
+.navbar-signUp,
+.navbar-logIn {
+  text-decoration: none;
+  color: black;
+}
+
+#navbar-profile {
+  color: #ff006d;
+  font-size: 16px;
+  font-weight: bolder;
+  margin-top: -10px;
 }

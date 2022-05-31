@@ -15,11 +15,23 @@ router.post("/", async (req, res) => {
 router.get("/", async (req, res) => {
   try {
     const query = req.query;
+    console.log(query);
+    
     const filter = {};
     if (query.filter) {
-      filter.tyoe = query.filter;
+      filter.type = query.filter;
     }
-    let category = [],price = []
+
+    if(query.country) {
+      filter.country=query.country;
+    }
+
+    if(query.size){
+       filter.size=query.size;
+    }
+
+    let category = [],price = [],brand=[];
+
     if (query.category1) {
       let a = { category: query.category1 };
       category.push(a)
@@ -36,6 +48,9 @@ router.get("/", async (req, res) => {
       let a = { category: query.category4 };
       category.push(a)
     }
+    
+
+     
     if (query.c1) {
       let a = { $and: [{ price: { $gte: 1 } }, { price: { $lte: 1000 } }] };
       price.push(a)
@@ -52,20 +67,45 @@ router.get("/", async (req, res) => {
       let a = { $and: [{ price: { $gt: 4000 } }, { price: { $lte: 10000 } }]};
       price.push(a)
     }
-    if(category.length || price.length){
-        filter.$and = []
+
+    if(query.brand1){
+      brand.push({brand:query.brand1})
+    }
+    if(query.brand2){
+      brand.push({brand:query.brand2})
+    }
+    if(query.brand3){
+      brand.push({brand:query.brand3})
+    }
+    if(query.brand4){
+      brand.push({brand:query.brand4})
+    }
+    
+    if(category.length || price.length || brand.length){
+        filter.$and = [];
         if(category.length)
         filter.$and.push({$or : category})
         if(price.length)
         filter.$and.push({$or : price})
+        if(brand.length)
+        filter.$and.push({$or : brand})
     }
-    const products = await Product.find(filter).lean();
+
+    let products = await Product.find(filter).lean();
+    if(query.sorting=="asc"){
+      products = await Product.find(filter).lean().sort({price:1});
+    }
+    if(query.sorting=="dsc"){
+      products = await Product.find(filter).lean().sort({price:-1});
+    }
     return res.status(201).send(products);
   } catch (error) {
     console.log({ message: error.message });
     return res.status(501).send(error.message);
   }
 });
+
+
 
 router.get("/:id", async (req, res) => {
   try {
